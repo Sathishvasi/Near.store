@@ -20,7 +20,7 @@ class Navbar extends Component {
     super(props);
     this.state = {};
     this.showSearchBar = this.showSearchBar.bind(this);
-    console.log(productData);
+    console.log("Store title in navbar: " + this.props.storeTitle);
   }
 
   showSearchBar() {
@@ -35,9 +35,7 @@ class Navbar extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 5,
-      slidesToScroll: 5,
-      nextArrow: <i class="fas fa-chevron-right"></i>,
-      prevArrow: <i class="fas fa-chevron-left"></i>
+      slidesToScroll: 5
     };
     return (
       <div className="nav-container">
@@ -75,14 +73,17 @@ class Navbar extends Component {
             <img src={searchIcon} alt="Search Icon" />
           </div>
         }
+         <b>Store title - {this.props.storeTitle}</b>
         {this.props.productListing &&
           <div className="product-carousel">
             <Slider {...settings}>
-              {productData.map((val, index) => (
-                <div key={index}>
-                  {val.productCategory}
-                </div>
-              ))}
+              {productData.map((val, index) => {
+                return index > 0 &&
+                  (<div key={index}>
+                    <img className="product-carousel__icon" src={require("../../assets/img/products" + val.productIcon)} alt="Product Icon" />
+                    <p className="product-carousel__text">{val.productCategory}</p>
+                  </div>)
+              })}
             </Slider>
           </div>
         }
@@ -94,13 +95,14 @@ class Navbar extends Component {
 function mapStateToProps(state) {
   return {
     hideSearchBar: state.hideSearchBar,
-    productListing: state.productListing
+    productListing: state.productListing,
+    storeTitle: state.storeTitle
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    bindActionCreators: value => dispatch({ type: 'SEARCHBAR', value })
+    bindActionCreators: value => dispatch({ type: 'STORE', value })
   }
 }
 

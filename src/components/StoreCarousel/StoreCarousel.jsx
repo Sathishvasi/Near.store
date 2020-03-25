@@ -8,6 +8,7 @@ import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
 import storeData from '../../data/store-data';
 import ReactStars from 'react-rating-stars-component'
+import { connect } from "react-redux";
 
 const ratingChanged = (newRating) => {
   console.log(newRating)
@@ -17,6 +18,13 @@ class StoreCarousel extends Component {
   constructor(props) {
     super(props);
     this.state = {}
+    this.passStoreData = this.passStoreData.bind(this);
+  }
+
+  passStoreData(val) {
+    this.props.bindActionCreators({
+      storeTitle: val
+    });
   }
 
   render() {
@@ -50,7 +58,7 @@ class StoreCarousel extends Component {
                         onChange={ratingChanged}
                         size={12}
                         color2={'#FED337'} />
-                      <NavLink to="/products">Learn more</NavLink>
+                      <NavLink to="/products" onClick={() => this.passStoreData(val.name)}>Learn more</NavLink>
                     </div>
                   </div>
                 ))}
@@ -62,4 +70,10 @@ class StoreCarousel extends Component {
   }
 }
 
-export default StoreCarousel;
+function mapDispatchToProps(dispatch) {
+  return {
+    bindActionCreators: value => dispatch({ type: 'STORE', value })
+  }
+}
+
+export default connect(null, mapDispatchToProps)(StoreCarousel);

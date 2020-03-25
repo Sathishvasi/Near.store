@@ -1,7 +1,7 @@
 .product,
 .store {
     padding: rem(10) rem(20) rem(15) rem(20);
-    width: calc(100% - 5px);
+    // width: calc(100% - 5px);
 
     &__header {
         display: flex;
@@ -12,6 +12,7 @@
         h4 {
             margin: 0;
             border-bottom: 1px solid $green;
+            text-transform: uppercase;
         }
 
         a {

@@ -14,12 +14,10 @@ class ProductItems extends Component {
         super(props);
         this.state = {
         };
-    }
-
-    componentDidMount() {
+        console.log("Store title in product item: " + this.props.storeTitle);
         this.props.bindActionCreators({
             productListing: true,
-            hideSearchBar: true
+            hideSearchBar: false
         });
     }
 
@@ -39,14 +37,15 @@ class ProductItems extends Component {
 function mapStateToProps(state) {
     return {
         hideSearchBar: state.hideSearchBar,
-        productListing: state.productListing
+        productListing: state.productListing,
+        storeTitle: state.storeTitle
     };
 }
 
 
 function mapDispatchToProps(dispatch) {
     return {
-        bindActionCreators: value => dispatch({ type: 'PRODUCT_LISTING', value })
+        bindActionCreators: value => dispatch({ type: 'STORE', value })
     }
 }
 

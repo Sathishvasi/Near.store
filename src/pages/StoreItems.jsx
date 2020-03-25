@@ -13,7 +13,6 @@ const ratingChanged = (newRating) => {
     console.log(newRating)
 }
 
-
 class StoreItems extends Component {
     constructor(props) {
         super(props);
@@ -21,7 +20,16 @@ class StoreItems extends Component {
         };
 
         this.props.bindActionCreators({
-            hideSearchBar: true
+            hideSearchBar: true,
+            storeTitle: '',
+            productListing: false
+        });
+        this.passStoreData = this.passStoreData.bind(this);
+    }
+
+    passStoreData(val) {
+        this.props.bindActionCreators({
+            storeTitle: val
         });
     }
 
@@ -46,7 +54,7 @@ class StoreItems extends Component {
                                         onChange={ratingChanged}
                                         size={12}
                                         color2={'#FED337'} />
-                                    <NavLink to="/products">Learn more</NavLink>
+                                    <NavLink to="/products" onClick={() => this.passStoreData(val.name)}>Learn more</NavLink>
                                 </div>
                             </div>
                         ))}
@@ -59,7 +67,7 @@ class StoreItems extends Component {
 
 function mapDispatchToProps(dispatch) {
     return {
-        bindActionCreators: value => dispatch({ type: 'SEARCHBAR', value })
+        bindActionCreators: value => dispatch({ type: 'STORE', value })
     }
 }
 

@@ -36,7 +36,7 @@ class StoreDashboard extends Component {
 
 function mapDispatchToProps(dispatch) {
   return {
-    bindActionCreators: value => dispatch({ type: 'SEARCHBAR', value })
+    bindActionCreators: value => dispatch({ type: 'STORE', value })
   }
 }
 
