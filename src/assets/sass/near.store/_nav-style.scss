@@ -1,0 +1,112 @@
+.nav-container {
+    .header {
+        padding: rem(20);
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &__hamburger {
+            width: rem(26);
+            height: rem(24);
+            margin-right: rem(25);
+            cursor: pointer;
+        }
+
+        &__logo {
+            height: rem(38);
+            width: rem(137);
+        }
+
+        &__search {
+            position: absolute;
+            right: 25px;
+            width: 20px;
+            cursor: pointer;
+        }
+    }
+
+    &__border {
+        height: rem(5);
+        width: 100%;
+        background-color: $border-grey;
+    }
+
+    .notification {
+        padding: rem(15) rem(25) rem(12) rem(20);
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid $border-grey;
+
+        &__location {
+            display: flex;
+
+            img {
+                width: rem(15);
+                height: rem(20);
+                margin-right: rem(10);
+            }
+
+            p {
+                font-size: rem(15);
+                cursor: pointer;
+            }
+        }
+
+        &__icons {
+            display: flex;
+
+            &-wrapper {
+                position: relative;
+
+                img {
+                    width: rem(20);
+                    height: rem(20);
+                    margin-left: rem(22);
+                    cursor: pointer;
+                }
+            }
+
+            .count {
+                &:after {
+                    content: attr(data-count);
+                    width: rem(14);
+                    height: rem(14);
+                    background-color: $green;
+                    display: block;
+                    right: rem(-7);
+                    top: rem(9);
+                    position: absolute;
+                    border-radius: 50%;
+                    font-size: rem(9);
+                    color: white;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .search-bar {
+        padding: rem(15) rem(20);
+        border-bottom: 2px solid $border-grey;
+        position: relative;
+
+        input {
+            border: 1px solid $green;
+            width: 100%;
+            padding: rem(12);
+            border-radius: rem(5);
+        }
+
+        img {
+            position: absolute;
+            right: rem(35);
+            width: rem(15);
+            transform: translateY(-50%);
+            top: 50%;
+        }
+    }
+
+    .product-carousel {
+        width: calc(100% - 25px);
+    }
+}
