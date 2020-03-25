@@ -73,7 +73,7 @@ class Navbar extends Component {
             <img src={searchIcon} alt="Search Icon" />
           </div>
         }
-         <b>Store title - {this.props.storeTitle}</b>
+         {/* <b>Store title - {this.props.storeTitle}</b> */}
         {this.props.productListing &&
           <div className="product-carousel">
             <Slider {...settings}>
