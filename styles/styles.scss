@@ -1,0 +1,139 @@
+body {
+  background-color: black;
+  background-image: url("../assets/background.jpg");
+  font-family: "Nunito", sans-serif;
+}
+
+body,
+p {
+  margin: 0;
+}
+
+.logo-wrapper {
+  text-align: center;
+  img {
+    width: 120px;
+    height: 120px;
+  }
+  h3 {
+    margin: 0;
+    padding-bottom: 20px;
+    color: #949494;
+  }
+}
+
+.score-wrapper {
+  margin: 0 15px;
+
+  .score-card {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+
+    background: white;
+    border-radius: 7px;
+    margin-bottom: 20px;
+
+    .team-wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0px;
+      border-bottom: 1px solid #cacaca;
+      margin: 0 15px;
+
+      .versus {
+        font-size: 14px;
+        color: #d60000;
+        font-weight: bold;
+      }
+
+      .team {
+        display: flex;
+        img {
+          width: 50px;
+          height: 50px;
+          margin-right: 10px;
+          object-fit: contain;
+        }
+
+        &-details {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        &-name {
+          font-size: 13px;
+          color: #ababab;
+        }
+
+        .score-details {
+          display: flex;
+          align-items: flex-end;
+
+          .score {
+            font-size: 16px;
+            font-weight: bold;
+            color: #003390;
+            margin-right: 4px;
+          }
+
+          .overs {
+            font-size: 12px;
+            color: #3e3e3e;
+            margin-bottom: 2px;
+          }
+        }
+      }
+
+      .right {
+        img {
+          margin-right: 0px;
+          margin-left: 10px;
+        }
+
+        .team-details {
+          align-items: flex-end;
+        }
+
+        .score-details {
+          .score {
+            margin-right: 0px;
+          }
+
+          .overs {
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+
+    .team-status {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #3e3e3e;
+      padding: 7px 15px;
+    }
+
+    .team-summary {
+      background-color: #dcdcdc;
+      border-bottom-left-radius: 7px;
+      border-bottom-right-radius: 7px;
+      font-size: 12px;
+      padding: 5px 15px;
+      text-align: center;
+    }
+  }
+
+  .upcoming {
+    .team-wrapper {
+      border-bottom: none;
+      .team-name {
+        color: #656565;
+        font-weight: bold;
+      }
+    }
+  }
+}

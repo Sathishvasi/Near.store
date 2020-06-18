@@ -1,0 +1,159 @@
+body {
+  background-color: black;
+  background-image: url("../assets/background.jpg");
+  font-family: "Nunito", sans-serif;
+}
+
+body,
+p {
+  margin: 0;
+}
+
+.logo-wrapper {
+  text-align: center;
+}
+
+.logo-wrapper img {
+  width: 120px;
+  height: 120px;
+}
+
+.logo-wrapper h3 {
+  margin: 0;
+  padding-bottom: 20px;
+  color: #949494;
+}
+
+.score-wrapper {
+  margin: 0 15px;
+}
+
+.score-wrapper .score-card {
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  background: white;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+
+.score-wrapper .score-card .team-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0px;
+  border-bottom: 1px solid #cacaca;
+  margin: 0 15px;
+}
+
+.score-wrapper .score-card .team-wrapper .versus {
+  font-size: 14px;
+  color: #d60000;
+  font-weight: bold;
+}
+
+.score-wrapper .score-card .team-wrapper .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.score-wrapper .score-card .team-wrapper .team img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.score-wrapper .score-card .team-wrapper .team-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.score-wrapper .score-card .team-wrapper .team-name {
+  font-size: 13px;
+  color: #ababab;
+}
+
+.score-wrapper .score-card .team-wrapper .team .score-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.score-wrapper .score-card .team-wrapper .team .score-details .score {
+  font-size: 16px;
+  font-weight: bold;
+  color: #003390;
+  margin-right: 4px;
+}
+
+.score-wrapper .score-card .team-wrapper .team .score-details .overs {
+  font-size: 12px;
+  color: #3e3e3e;
+  margin-bottom: 2px;
+}
+
+.score-wrapper .score-card .team-wrapper .right img {
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+.score-wrapper .score-card .team-wrapper .right .team-details {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.score-wrapper .score-card .team-wrapper .right .score-details .score {
+  margin-right: 0px;
+}
+
+.score-wrapper .score-card .team-wrapper .right .score-details .overs {
+  margin-right: 4px;
+}
+
+.score-wrapper .score-card .team-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+  color: #3e3e3e;
+  padding: 7px 15px;
+}
+
+.score-wrapper .score-card .team-summary {
+  background-color: #dcdcdc;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  font-size: 12px;
+  padding: 5px 15px;
+  text-align: center;
+}
+
+.score-wrapper .upcoming .team-wrapper {
+  border-bottom: none;
+}
+
+.score-wrapper .upcoming .team-wrapper .team-name {
+  color: #656565;
+  font-weight: bold;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,42 @@
+[{
+
+        "imgA": "/assets/india.png",
+        "teamA": "CV",
+        "imgB": "/assets/wi.png",
+        "teamB": "CKM"
+    },
+
+    {
+
+        "imgA": "/assets/australia.png",
+        "teamA": "TK",
+        "imgB": "/assets/india.png",
+        "teamB": "TT"
+    },
+
+    {
+
+        "imgA": "/assets/wi.png",
+        "teamA": "COTS",
+        "imgB": "/assets/australia.png",
+        "teamB": "CKM"
+    },
+
+
+    {
+
+        "imgA": "/assets/india.png",
+        "teamA": "BVV",
+        "imgB": "/assets/australia.png",
+        "teamB": "TSSM"
+    },
+
+    {
+
+        "imgA": "/assets/india.png",
+        "teamA": "BVV",
+        "imgB": "/assets/wi.png",
+        "teamB": "TSSM"
+    }
+
+]
