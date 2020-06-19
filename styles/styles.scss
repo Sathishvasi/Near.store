@@ -41,11 +41,15 @@ p {
       padding: 10px 0px;
       border-bottom: 1px solid #cacaca;
       margin: 0 15px;
+      position: relative;
 
       .versus {
         font-size: 14px;
         color: #d60000;
         font-weight: bold;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
       }
 
       .team {
@@ -65,7 +69,7 @@ p {
 
         &-name {
           font-size: 13px;
-          color: #828282;
+          color: #5d5d5d;
           margin-bottom: 4px;
         }
 

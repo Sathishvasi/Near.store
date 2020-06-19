@@ -36,7 +36,7 @@ $(document).ready(function () {
                 <p class="run-rate">RR: ${rr}</p>
             </div>
             <button class="team-summary">
-                View Details
+                View Score card
             </button>
         </div>`
         });
