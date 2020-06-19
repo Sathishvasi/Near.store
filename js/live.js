@@ -48,6 +48,7 @@ $(document).ready(function () {
 
     $(document).on('click', '.team-summary', function (e) {
         let teamID = $(e.target).closest('.score-card').data('id');
-        window.location = `/view-details.html?id=${teamID}`;
+        let host = window.location.href;
+        window.location = host.substr(0,host.lastIndexOf("/"))+`/view-details.html?id=${teamID}`;
     });
 })
