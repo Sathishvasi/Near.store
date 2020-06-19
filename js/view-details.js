@@ -10,6 +10,7 @@ $(document).ready(function () {
     $(".slider").slick({
         slidesToShow: 6,
         infinite: false,
-        arrows: false
+        arrows: false,
+        slidesToScroll: 6
     })
 })
