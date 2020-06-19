@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $('.loader').show();
-    $.getJSON("../data/upcoming.json", function (data) {
+    $.getJSON("/data/upcoming.json", function (data) {
         console.log(data);
         let scoreCards = '';
         let rr;
