@@ -23,7 +23,8 @@ $(document).ready(function () {
                 </div>
             </div>
             <div class="team-summary">
-                View Details
+                <span>${val.matchDate}</span>
+                <span>${val.matchTime}</span>
             </div>
         </div>`
         });

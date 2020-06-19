@@ -4,7 +4,9 @@
         "teamA": "CV",
         "imgB": "./assets/wi.png",
         "teamB": "CKM"
-    },
+,
+"matchDate": "20 NOV",
+"matchTime": "07:30 PM"    },
 
     {
 
@@ -12,7 +14,9 @@
         "teamA": "TK",
         "imgB": "./assets/india.png",
         "teamB": "TT"
-    },
+ ,
+"matchDate": "20 NOV",
+"matchTime": "07:30 PM"   },
 
     {
 
@@ -20,7 +24,9 @@
         "teamA": "COTS",
         "imgB": "./assets/australia.png",
         "teamB": "CKM"
-    },
+,
+"matchDate": "20 NOV",
+"matchTime": "07:30 PM"    },
 
 
     {
@@ -28,7 +34,9 @@
         "imgA": "./assets/india.png",
         "teamA": "BVV",
         "imgB": "./assets/australia.png",
-        "teamB": "TSSM"
+        "teamB": "TSSM",
+        "matchDate": "20 NOV",
+        "matchTime": "07:30 PM"
     },
 
     {
@@ -36,7 +44,9 @@
         "imgA": "./assets/india.png",
         "teamA": "BVV",
         "imgB": "./assets/wi.png",
-        "teamB": "TSSM"
+        "teamB": "TSSM",
+        "matchDate": "20 NOV",
+        "matchTime": "07:30 PM"
     }
 
 ]

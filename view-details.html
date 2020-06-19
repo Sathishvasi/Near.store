@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Crickz</title>
+    <link href="./vendor/nunito.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/loader.css">
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body>
+    <div class="logo-wrapper">
+        <img src="./assets/logo.png" alt="Logo" />
+        <!-- <h3>Live Details</h3> -->
+    </div>
+
+    <div class="details">
+        <div class="details__header">
+            <div class="status">
+                <span class="status-content"></span>
+            </div>
+            <div class="teams">
+                <div class="teams-score">
+                    <div class="detail">
+                        <img src="./assets/india.png" alt="India" />
+                        <span>IND</span>
+                    </div>
+                    <div class="score">
+                        497/8
+                    </div>
+                </div>
+                <div class="teams-score">
+                    <div class="detail">
+                        <img src="./assets/wi.png" alt="West  Indies" />
+                        <span>WI</span>
+                    </div>
+                    <div class="score">
+                        204/3 (20.6 ov)
+                    </div>
+                </div>
+                <div class="teams-target">
+                    WI needs 293 runs from 174 balls
+                </div>
+                <div class="teams-target">
+                    <span>R.R.R: <b>0.0</b></span>
+                    <span>C.R.R: <b>6.71</b></span>
+                </div>
+            </div>
+        </div>
+        <div class="details__content">
+            <div class="partnership">
+                <div class="partnership__column header">
+                    <span class="batsman">Batsman</span>
+                    <div class="partnership__column-values">
+                        <span>R</span>
+                        <span>B</span>
+                        <span>4s</span>
+                        <span>6s</span>
+                        <span>SR</span>
+                    </div>
+                </div>
+                <div class="partnership__column">
+                    <span class="batsman">Pollard*</span>
+                    <div class="partnership__column-values">
+                        <span>1</span>
+                        <span>1</span>
+                        <span>4</span>
+                        <span>1</span>
+                        <span>30</span>
+                    </div>
+                </div>
+                <div class="partnership__column">
+                    <span class="batsman">Bravo</span>
+                    <div class="partnership__column-values">
+                        <span>4</span>
+                        <span>1</span>
+                        <span>0</span>
+                        <span>0</span>
+                        <span>24</span>
+                    </div>
+                </div>
+                <div class="partnership__column summary">
+                    <span class="batsman">Partnership: 34(23)</span>
+                    <div class="partnership__column-values">Last wkt: Chris Gayle 40(20)</div>
+                </div>
+            </div>
+
+            <div class="ball-details">
+                <span>Last 12 Balls: </span>
+                <div class="slider">
+                    <div class="run-stats"><span class="high">4</span></div>
+                    <div class="run-stats"><span class="mid">1</span></div>
+                    <div class="run-stats"><span class="mid">0</span></div>
+                    <div class="run-stats"><span class="high">6</span></div>
+                    <div class="run-stats"><span class="low">W</span></div>
+                    <div class="run-stats"><span class="high">6</span></div>
+                    <div class="run-stats"><span class="high">4</span></div>
+                    <div class="run-stats"><span class="mid">2</span></div>
+                    <div class="run-stats"><span class="high">4</span></div>
+                    <div class="run-stats"><span class="high">4</span></div>
+                    <div class="run-stats"><span class="high">4</span></div>
+                    <div class="run-stats"><span class="high">6</span></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="details__fav">
+            <div class="fav">
+                <div class="fav-content">
+                    Fav Team: <p>IND</p>
+                </div>
+                <div class="fav-status">
+                    <p>IND:</p>
+                    <div class="red">1</div>
+                    <div class="green">1</div>
+                </div>
+            </div>
+            <div class="over-runs">
+                <div class="fav-status">
+                    <p>Over runs:</p>
+                    <div class="red">-</div>
+                    <div class="green">-</div>
+                </div>
+                <div class="fav-status">
+                    <p>RXB:</p>
+                    <div class="red">-</div>
+                    <div class="green">-</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./vendor/jquery.min.js"></script>
+<script src="./js/view-details.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</html>
