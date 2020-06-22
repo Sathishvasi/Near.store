@@ -135,6 +135,8 @@ p {
       font-family: "Nunito", sans-serif;
       width: 100%;
       box-sizing: border-box;
+      text-decoration: none;
+      display: block;
 
       span {
         padding: 0 10px;
@@ -206,6 +208,9 @@ p {
           span {
             font-weight: bold;
             color: #656565;
+          }
+          .team-name{
+            margin-right: 5px;
           }
         }
 
@@ -361,6 +366,36 @@ p {
       justify-content: space-between;
       margin: 0 15px;
       padding-top: 10px;
+    }
+  }
+}
+
+.history {
+  .details__header {
+    .status {
+      height: 65px;
+      justify-content: flex-start;
+    }
+    .teams-score {
+      padding: 0;
+      width: 100%;
+
+      .score {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .bowlers {
+    margin-top: 15px;
+    border-bottom: none;
+    .partnership__column:last-child {
+      padding-bottom: 0px;
+    }
+  }
+  .batsman {
+    .partnership__column:last-child {
+      padding-bottom: 15px;
     }
   }
 }

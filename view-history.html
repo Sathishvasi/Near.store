@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Crickz</title>
+    <link href="./vendor/nunito.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/loader.css">
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body>
+    <div class="logo-wrapper">
+        <img src="./assets/logo.png" alt="Logo" />
+        <!-- <h3>Live Details</h3> -->
+    </div>
+
+    <div class="details history">
+        <div class="details__header">
+            <div class="status teams">
+                <div class="teams-score">
+                    <div class="detail">
+                        <img src="./assets/india.png" alt="India" />
+                        <span class="team-name">INDIA </span><span> won by 2 wickets</span>
+                    </div>
+                    <div class="score">
+                        497 / 8*
+                    </div>
+                </div>
+            </div>
+            <div class="details__content">
+                <div class="partnership batsman">
+                    <div class="partnership__column header">
+                        <span class="batsman">Batsman</span>
+                        <div class="partnership__column-values">
+                            <span>R</span>
+                            <span>B</span>
+                            <span>4s</span>
+                            <span>6s</span>
+                            <span>SR</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Virat Kohli*</span>
+                        <div class="partnership__column-values">
+                            <span>1</span>
+                            <span>1</span>
+                            <span>4</span>
+                            <span>1</span>
+                            <span>30</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Bravo</span>
+                        <div class="partnership__column-values">
+                            <span>4</span>
+                            <span>1</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>24</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">MS Shoni</span>
+                        <div class="partnership__column-values">
+                            <span>1</span>
+                            <span>1</span>
+                            <span>4</span>
+                            <span>1</span>
+                            <span>30</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Rohit Sharma</span>
+                        <div class="partnership__column-values">
+                            <span>4</span>
+                            <span>1</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>24</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">KL Rahul</span>
+                        <div class="partnership__column-values">
+                            <span>1</span>
+                            <span>1</span>
+                            <span>4</span>
+                            <span>1</span>
+                            <span>30</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Hardik Pandya</span>
+                        <div class="partnership__column-values">
+                            <span>4</span>
+                            <span>1</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>24</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Harbhajan Singh</span>
+                        <div class="partnership__column-values">
+                            <span>1</span>
+                            <span>1</span>
+                            <span>4</span>
+                            <span>1</span>
+                            <span>30</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Dinesh Karthik</span>
+                        <div class="partnership__column-values">
+                            <span>4</span>
+                            <span>1</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>24</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Zaheer Khan</span>
+                        <div class="partnership__column-values">
+                            <span>1</span>
+                            <span>1</span>
+                            <span>4</span>
+                            <span>1</span>
+                            <span>30</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Yusuf Pathan</span>
+                        <div class="partnership__column-values">
+                            <span>4</span>
+                            <span>1</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>24</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Dhawan</span>
+                        <div class="partnership__column-values">
+                            <span>4</span>
+                            <span>1</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>24</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="partnership bowlers">
+                    <div class="partnership__column header">
+                        <span class="batsman">Bowlers</span>
+                        <div class="partnership__column-values">
+                            <span>O</span>
+                            <span>M</span>
+                            <span>R</span>
+                            <span>W</span>
+                            <span>Ec</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Bumrah</span>
+                        <div class="partnership__column-values">
+                            <span>1</span>
+                            <span>1</span>
+                            <span>4</span>
+                            <span>1</span>
+                            <span>30</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Mohammed Shami</span>
+                        <div class="partnership__column-values">
+                            <span>4</span>
+                            <span>1</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>24</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Ravindra Jadeja</span>
+                        <div class="partnership__column-values">
+                            <span>1</span>
+                            <span>1</span>
+                            <span>4</span>
+                            <span>1</span>
+                            <span>30</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Bhuvaneshwar Kumar</span>
+                        <div class="partnership__column-values">
+                            <span>4</span>
+                            <span>1</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>24</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="details history">
+        <div class="details__header">
+            <div class="status teams">
+                <div class="teams-score">
+                    <div class="detail">
+                        <img src="./assets/wi.png" alt="India" />
+                        <span class="team-name">WEST INDIES</span><span>lost</span>
+                    </div>
+                    <div class="score">
+                        390
+                    </div>
+                </div>
+            </div>
+            <div class="details__content">
+                <div class="partnership batsman">
+                    <div class="partnership__column header">
+                        <span class="batsman">Batsman</span>
+                        <div class="partnership__column-values">
+                            <span>R</span>
+                            <span>B</span>
+                            <span>4s</span>
+                            <span>6s</span>
+                            <span>SR</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Chris Gayle</span>
+                        <div class="partnership__column-values">
+                            <span>1</span>
+                            <span>1</span>
+                            <span>4</span>
+                            <span>1</span>
+                            <span>30</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Jason Holder</span>
+                        <div class="partnership__column-values">
+                            <span>4</span>
+                            <span>1</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>24</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Hetmeyer</span>
+                        <div class="partnership__column-values">
+                            <span>1</span>
+                            <span>1</span>
+                            <span>4</span>
+                            <span>1</span>
+                            <span>30</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Brathwaite</span>
+                        <div class="partnership__column-values">
+                            <span>4</span>
+                            <span>1</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>24</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Pollard</span>
+                        <div class="partnership__column-values">
+                            <span>1</span>
+                            <span>1</span>
+                            <span>4</span>
+                            <span>1</span>
+                            <span>30</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Dwyane Bravo</span>
+                        <div class="partnership__column-values">
+                            <span>4</span>
+                            <span>1</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>24</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Shai Hope</span>
+                        <div class="partnership__column-values">
+                            <span>1</span>
+                            <span>1</span>
+                            <span>4</span>
+                            <span>1</span>
+                            <span>30</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Sunil Ambrus</span>
+                        <div class="partnership__column-values">
+                            <span>4</span>
+                            <span>1</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>24</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Kemar Roach</span>
+                        <div class="partnership__column-values">
+                            <span>1</span>
+                            <span>1</span>
+                            <span>4</span>
+                            <span>1</span>
+                            <span>30</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Darren Bravo</span>
+                        <div class="partnership__column-values">
+                            <span>4</span>
+                            <span>1</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>24</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Thomas</span>
+                        <div class="partnership__column-values">
+                            <span>4</span>
+                            <span>1</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>24</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="partnership bowlers">
+                    <div class="partnership__column header">
+                        <span class="batsman">Bowlers</span>
+                        <div class="partnership__column-values">
+                            <span>O</span>
+                            <span>M</span>
+                            <span>R</span>
+                            <span>W</span>
+                            <span>Ec</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Gabriel</span>
+                        <div class="partnership__column-values">
+                            <span>1</span>
+                            <span>1</span>
+                            <span>4</span>
+                            <span>1</span>
+                            <span>30</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Ashley</span>
+                        <div class="partnership__column-values">
+                            <span>4</span>
+                            <span>1</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>24</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Nicholas</span>
+                        <div class="partnership__column-values">
+                            <span>1</span>
+                            <span>1</span>
+                            <span>4</span>
+                            <span>1</span>
+                            <span>30</span>
+                        </div>
+                    </div>
+                    <div class="partnership__column">
+                        <span class="batsman">Kemar Roach</span>
+                        <div class="partnership__column-values">
+                            <span>4</span>
+                            <span>1</span>
+                            <span>0</span>
+                            <span>0</span>
+                            <span>24</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="./vendor/jquery.min.js"></script>
+<!-- <script src="./js/view-details.js"></script> -->
+
+</html>

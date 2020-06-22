@@ -157,6 +157,8 @@ p {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
+  display: block;
 }
 
 .score-wrapper .score-card .team-summary span {
@@ -248,6 +250,10 @@ p {
 .details__header .teams-score .detail span {
   font-weight: bold;
   color: #656565;
+}
+
+.details__header .teams-score .detail .team-name {
+  margin-right: 5px;
 }
 
 .details__header .teams-score .score {
@@ -451,5 +457,34 @@ p {
           justify-content: space-between;
   margin: 0 15px;
   padding-top: 10px;
+}
+
+.history .details__header .status {
+  height: 65px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.history .details__header .teams-score {
+  padding: 0;
+  width: 100%;
+}
+
+.history .details__header .teams-score .score {
+  font-size: 20px;
+}
+
+.history .bowlers {
+  margin-top: 15px;
+  border-bottom: none;
+}
+
+.history .bowlers .partnership__column:last-child {
+  padding-bottom: 0px;
+}
+
+.history .batsman .partnership__column:last-child {
+  padding-bottom: 15px;
 }
 /*# sourceMappingURL=styles.css.map */

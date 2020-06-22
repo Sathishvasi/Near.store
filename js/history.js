@@ -35,7 +35,7 @@ $(document).ready(function () {
                 <p class="status">${val.matchStatus}</p>
                 <p class="run-rate">RR: ${rr}</p>
             </div>
-            <a href="/view-details.html?id=${val.id}" class="team-summary">
+            <a href="/view-history.html?id=${val.id}" class="team-summary">
                 View Score card
             </a>
         </div>`
