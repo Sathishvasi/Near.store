@@ -176,7 +176,7 @@ p {
 }
 
 .details {
-  margin: 15px;
+  margin: 0 15px 15px 15px;
 }
 
 .details__header, .details__content, .details__fav {
@@ -221,6 +221,7 @@ p {
 
 .details__header .teams {
   padding: 0 15px;
+  position: relative;
 }
 
 .details__header .teams-score {
@@ -277,6 +278,16 @@ p {
   padding-right: 15px;
 }
 
+.details__header .teams .view-summary {
+  text-decoration: none;
+  color: #003390;
+  font-weight: bold;
+  font-size: 12px;
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+}
+
 .details__content {
   margin-top: 15px;
   padding: 10px 0px;
@@ -322,6 +333,10 @@ p {
 .details__content .partnership .summary {
   font-size: 13px;
   margin-top: 5px;
+}
+
+.details__content .bowler {
+  margin-top: 10px;
 }
 
 .details__content .ball-details {

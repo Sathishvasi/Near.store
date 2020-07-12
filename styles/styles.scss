@@ -157,7 +157,7 @@ p {
 }
 
 .details {
-  margin: 15px;
+  margin: 0 15px 15px 15px;
 
   &__header,
   &__content,
@@ -193,6 +193,7 @@ p {
     }
     .teams {
       padding: 0 15px;
+      position: relative;
 
       &-score {
         display: flex;
@@ -210,7 +211,7 @@ p {
             font-weight: bold;
             color: #656565;
           }
-          .team-name{
+          .team-name {
             margin-right: 5px;
           }
         }
@@ -230,6 +231,15 @@ p {
         span:first-child {
           padding-right: 15px;
         }
+      }
+      .view-summary {
+        text-decoration: none;
+        color: #003390;
+        font-weight: bold;
+        font-size: 12px;
+        position: absolute;
+        right: 15px;
+        bottom: 0;
       }
     }
   }
@@ -268,6 +278,10 @@ p {
         font-size: 13px;
         margin-top: 5px;
       }
+    }
+
+    .bowler {
+      margin-top: 10px;
     }
 
     .ball-details {

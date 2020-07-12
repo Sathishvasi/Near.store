@@ -18,40 +18,35 @@
 <body>
     <div class="logo-wrapper">
         <img src="./assets/logo.png" alt="Logo" />
-        <!-- <h3>Live Details</h3> -->
+        <h3></h3> <!--Dynamic-->
     </div>
 
     <div class="details">
         <div class="details__header">
             <div class="status">
-                <span class="status-content"></span>
+                <span class="status-content"></span> <!--Dynamic-->
             </div>
             <div class="teams">
-                <div class="teams-score">
+                <div class="teams-score" id="teamScore1">
                     <div class="detail">
-                        <img src="./assets/india.png" alt="India" />
+                        <img src="./assets/india.png" alt="India" /> <!--Dynamic-->
                         <span>IND</span>
                     </div>
-                    <div class="score">
-                        497/8
-                    </div>
+                    <div class="score"></div> <!--Dynamic-->
                 </div>
-                <div class="teams-score">
+                <div class="teams-score" id="teamScore2">
                     <div class="detail">
-                        <img src="./assets/wi.png" alt="West  Indies" />
+                        <img src="./assets/wi.png" alt="West  Indies" /> <!--Dynamic-->
                         <span>WI</span>
                     </div>
-                    <div class="score">
-                        204/3 (20.6 ov)
-                    </div>
+                    <div class="score"></div> <!--Dynamic-->
                 </div>
+                <div class="teams-target reqRuns"></div> <!--Dynamic-->
                 <div class="teams-target">
-                    WI needs 293 runs from 174 balls
+                    <span>R.R.R: <b class="rrr">0.0</b></span> <!--Dynamic-->
+                    <span>C.R.R: <b class="crr">6.71</b></span> <!--Dynamic-->
                 </div>
-                <div class="teams-target">
-                    <span>R.R.R: <b>0.0</b></span>
-                    <span>C.R.R: <b>6.71</b></span>
-                </div>
+                <a class="view-summary" href="./view-history.html">View Summary</a>
             </div>
         </div>
         <div class="details__content">
@@ -66,24 +61,24 @@
                         <span>SR</span>
                     </div>
                 </div>
-                <div class="partnership__column">
-                    <span class="batsman">Pollard*</span>
+                <div class="partnership__column" id="teamPlayer1"> <!--Dynamic-->
+                    <span class="batsman"></span>
                     <div class="partnership__column-values">
-                        <span>1</span>
-                        <span>1</span>
-                        <span>4</span>
-                        <span>1</span>
-                        <span>30</span>
+                        <span class="runs"></span>
+                        <span class="balls"></span>
+                        <span class="fours"></span>
+                        <span class="sixes"></span>
+                        <span class="strikeRate"></span>
                     </div>
                 </div>
-                <div class="partnership__column">
-                    <span class="batsman">Bravo</span>
+                <div class="partnership__column" id="teamPlayer2"> <!--Dynamic-->
+                    <span class="batsman"></span>
                     <div class="partnership__column-values">
-                        <span>4</span>
-                        <span>1</span>
-                        <span>0</span>
-                        <span>0</span>
-                        <span>24</span>
+                        <span class="runs"></span>
+                        <span class="balls"></span>
+                        <span class="fours"></span>
+                        <span class="sixes"></span>
+                        <span class="strikeRate"></span>
                     </div>
                 </div>
                 <div class="partnership__column summary">
@@ -91,51 +86,61 @@
                     <div class="partnership__column-values">Last wkt: Chris Gayle 40(20)</div>
                 </div>
             </div>
+            <div class="partnership bowler">
+                <div class="partnership__column header">
+                    <span class="batsman">Bowler</span>
+                    <div class="partnership__column-values">
+                        <span>O</span>
+                        <span>R</span>
+                        <span>W</span>
+                        <span>ER</span>
+                        <span>M</span>
+                    </div>
+                </div>
+                <div class="partnership__column" id="bowlerDetails"> <!--Dynamic-->
+                    <span class="batsman"></span>
+                    <div class="partnership__column-values">
+                        <span class="overs"></span>
+                        <span class="runs"></span>
+                        <span class="wickets"></span>
+                        <span class="economy"></span>
+                        <span class="maiden"></span>
+                    </div>
+                </div>
+            </div>
 
             <div class="ball-details">
                 <span>Last 12 Balls: </span>
-                <div class="slider">
-                    <div class="run-stats"><span class="high">4</span></div>
-                    <div class="run-stats"><span class="mid">1</span></div>
-                    <div class="run-stats"><span class="mid">0</span></div>
-                    <div class="run-stats"><span class="high">6</span></div>
-                    <div class="run-stats"><span class="low">W</span></div>
-                    <div class="run-stats"><span class="high">6</span></div>
-                    <div class="run-stats"><span class="high">4</span></div>
-                    <div class="run-stats"><span class="mid">2</span></div>
-                    <div class="run-stats"><span class="high">4</span></div>
-                    <div class="run-stats"><span class="high">4</span></div>
-                    <div class="run-stats"><span class="high">4</span></div>
-                    <div class="run-stats"><span class="high">6</span></div>
-                </div>
+                <div class="slider"></div> <!-- Carousel -->
             </div>
 
         </div>
         <div class="details__fav">
             <div class="fav">
                 <div class="fav-content">
-                    Fav Team: <p>IND</p>
+                    Fav Team: <p></p> <!--Dynamic-->
                 </div>
-                <div class="fav-status">
-                    <p>IND:</p>
-                    <div class="red">1</div>
-                    <div class="green">1</div>
+                <div class="fav-status" id="favSt"> <!--Dynamic-->
+                    <p></p> 
+                    <div class="red"></div>
+                    <div class="green"></div>
                 </div>
             </div>
             <div class="over-runs">
-                <div class="fav-status">
+                <div class="fav-status" id="overRuns"> <!--Dynamic-->
                     <p>Over runs:</p>
-                    <div class="red">-</div>
-                    <div class="green">-</div>
+                    <div class="red"></div>
+                    <div class="green"></div>
                 </div>
-                <div class="fav-status">
+                <div class="fav-status" id="RXB"> <!--Dynamic-->
                     <p>RXB:</p>
-                    <div class="red">-</div>
-                    <div class="green">-</div>
+                    <div class="red"></div>
+                    <div class="green"></div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="loader">Loading...</div>
 </body>
 
 <script src="./vendor/jquery.min.js"></script>
