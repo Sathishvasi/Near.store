@@ -1,0 +1,158 @@
+[{
+        "leagueName": "International premier league",
+        "teamValues": [{
+                "id": "1",
+                "teamA": "CSK",
+                "teamB": "RCB",
+                "matchDate": "2020-07-11T20:44:21.841+00:00",
+                "teamARun": "97-8",
+                "teamBRun": 101,
+                "teamAOver": 8.4,
+                "teamBOver": 6,
+                "wonBy": "RCB",
+                "imgA": "./assets/india.png",
+                "imgB": "./assets/wi.png",
+                "matchStatus": "RCB won by 101 runs"
+            },
+            {
+                "id": "2",
+                "teamA": "CSK",
+                "teamB": "RCB",
+                "matchDate": "2020-07-11T20:44:21.841+00:00",
+                "teamARun": 97,
+                "teamBRun": 101,
+                "teamAOver": 8,
+                "teamBOver": 6,
+                "wonBy": "RCB",
+                "imgA": "./assets/wi.png",
+                "imgB": "./assets/india.png",
+                "matchStatus": "RCB won by 101 runs"
+            },
+            {
+                "id": "3",
+                "teamA": "CSK",
+                "teamB": "RCB",
+                "matchDate": "2020-07-11T20:44:21.841+00:00",
+                "teamARun": 97,
+                "teamBRun": 101,
+                "teamAOver": 8,
+                "teamBOver": 6,
+                "wonBy": "RCB",
+                "imgA": "./assets/india.png",
+                "imgB": "./assets/australia.png",
+                "matchStatus": "RCB won by 101 runs"
+            }
+        ]
+    },
+
+    {
+        "leagueName": "Premier league",
+        "teamValues": [{
+                "id": "1",
+                "teamA": "CSK",
+                "teamB": "RCB",
+                "matchDate": "2020-07-11T20:44:21.841+00:00",
+                "teamARun": 97,
+                "teamBRun": 101,
+                "teamAOver": 8,
+                "teamBOver": 6,
+                "wonBy": "RCB",
+                "imgA": "./assets/india.png",
+                "imgB": "./assets/wi.png",
+                "matchStatus": "RCB won by 101 runs"
+            },
+            {
+                "id": "2",
+                "teamA": "CSK",
+                "teamB": "RCB",
+                "matchDate": "2020-07-11T20:44:21.841+00:00",
+                "teamARun": 97,
+                "teamBRun": 101,
+                "teamAOver": 8,
+                "teamBOver": 6,
+                "wonBy": "RCB",
+                "imgA": "./assets/india.png",
+                "imgB": "./assets/wi.png",
+                "matchStatus": "RCB won by 101 runs"
+            }
+        ]
+    },
+    {
+        "leagueName": "Indian Premier league",
+        "teamValues": [{
+                "id": "1",
+                "teamA": "CSK",
+                "teamB": "RCB",
+                "matchDate": "2020-07-11T20:44:21.841+00:00",
+                "teamARun": 97,
+                "teamBRun": 101,
+                "teamAOver": 8,
+                "teamBOver": 6,
+                "wonBy": "RCB",
+                "imgA": "./assets/india.png",
+                "imgB": "./assets/wi.png",
+                "matchStatus": "RCB won by 101 runs"
+            },
+            {
+                "id": "2",
+                "teamA": "CSK",
+                "teamB": "RCB",
+                "matchDate": "2020-07-11T20:44:21.841+00:00",
+                "teamARun": 97,
+                "teamBRun": 101,
+                "teamAOver": 8,
+                "teamBOver": 6,
+                "wonBy": "RCB",
+                "imgA": "./assets/india.png",
+                "imgB": "./assets/wi.png",
+                "matchStatus": "RCB won by 101 runs"
+            }
+        ]
+    },
+    {
+        "leagueName": "Local premier league",
+        "teamValues": [{
+                "id": "1",
+                "teamA": "CSK",
+                "teamB": "RCB",
+                "matchDate": "2020-07-11T20:44:21.841+00:00",
+                "teamARun": "97-8",
+                "teamBRun": 101,
+                "teamAOver": 8.4,
+                "teamBOver": 6,
+                "wonBy": "RCB",
+                "imgA": "./assets/india.png",
+                "imgB": "./assets/wi.png",
+                "matchStatus": "RCB won by 101 runs"
+            },
+            {
+                "id": "2",
+                "teamA": "CSK",
+                "teamB": "RCB",
+                "matchDate": "2020-07-11T20:44:21.841+00:00",
+                "teamARun": 97,
+                "teamBRun": 101,
+                "teamAOver": 8,
+                "teamBOver": 6,
+                "wonBy": "RCB",
+                "imgA": "./assets/wi.png",
+                "imgB": "./assets/india.png",
+                "matchStatus": "RCB won by 101 runs"
+            },
+            {
+                "id": "3",
+                "teamA": "CSK",
+                "teamB": "RCB",
+                "matchDate": "2020-07-11T20:44:21.841+00:00",
+                "teamARun": 97,
+                "teamBRun": 101,
+                "teamAOver": 8,
+                "teamBOver": 6,
+                "wonBy": "RCB",
+                "imgA": "./assets/india.png",
+                "imgB": "./assets/australia.png",
+                "matchStatus": "RCB won by 101 runs"
+            }
+        ]
+    }
+]

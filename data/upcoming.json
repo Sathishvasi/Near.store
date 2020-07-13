@@ -1,52 +1,68 @@
 [{
+    "leagueName": "International premier league",
+    "teamValues": [{
+            "id": "1",
+            "teamA": "CSK",
+            "teamB": "RCB",
+            "matchDate": "20 NOV",
+            "imgA": "./assets/india.png",
+            "imgB": "./assets/wi.png",
+            "matchTime": "07:45 PM"
+        },
+        {
+            "id": "2",
+            "teamA": "CSK",
+            "teamB": "RCB",
+            "matchDate": "20 NOV",
+            "imgA": "./assets/india.png",
+            "imgB": "./assets/wi.png",
+            "matchTime": "07:45 PM"
+        }
+    ]
+},
 
-        "imgA": "./assets/india.png",
-        "teamA": "CV",
-        "imgB": "./assets/wi.png",
-        "teamB": "CKM"
-,
-"matchDate": "20 NOV",
-"matchTime": "07:30 PM"    },
-
-    {
-
-        "imgA": "./assets/australia.png",
-        "teamA": "TK",
-        "imgB": "./assets/india.png",
-        "teamB": "TT"
- ,
-"matchDate": "20 NOV",
-"matchTime": "07:30 PM"   },
-
-    {
-
-        "imgA": "./assets/wi.png",
-        "teamA": "COTS",
-        "imgB": "./assets/australia.png",
-        "teamB": "CKM"
-,
-"matchDate": "20 NOV",
-"matchTime": "07:30 PM"    },
-
-
-    {
-
-        "imgA": "./assets/india.png",
-        "teamA": "BVV",
-        "imgB": "./assets/australia.png",
-        "teamB": "TSSM",
-        "matchDate": "20 NOV",
-        "matchTime": "07:30 PM"
-    },
-
-    {
-
-        "imgA": "./assets/india.png",
-        "teamA": "BVV",
-        "imgB": "./assets/wi.png",
-        "teamB": "TSSM",
-        "matchDate": "20 NOV",
-        "matchTime": "07:30 PM"
-    }
-
+{
+    "leagueName": "Premier league",
+    "teamValues": [{
+            "id": "1",
+            "teamA": "CSK",
+            "teamB": "RCB",
+            "matchDate": "20 NOV",
+            "imgA": "./assets/india.png",
+            "imgB": "./assets/wi.png",
+            "matchTime": "07:45 PM"
+        },
+        {
+            "id": "2",
+            "teamA": "CSK",
+            "teamB": "RCB",
+            "matchDate": "20 NOV",
+            "imgA": "./assets/india.png",
+            "imgB": "./assets/wi.png",
+            "matchTime": "07:45 PM"
+        }
+    ]
+},
+{
+    "leagueName": "Indian Premier league",
+    "teamValues": [{
+            "id": "1",
+            "teamA": "CSK",
+            "teamB": "RCB",
+            "matchDate": "20 NOV",
+            "imgA": "./assets/india.png",
+            "imgB": "./assets/wi.png",
+            "matchTime": "07:45 PM"
+        },
+        {
+            "id": "2",
+            "teamA": "CSK",
+            "teamB": "RCB",
+            "matchDate": "20 NOV",
+            "imgA": "./assets/india.png",
+            "imgB": "./assets/wi.png",
+            "matchTime": "07:45 PM"
+        }
+    ]
+}
 ]
