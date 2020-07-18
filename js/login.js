@@ -24,15 +24,27 @@
         }
 
         if (check) {
-            let un = $('#username').val();
-            let pwd = $('#password').val();
-            if (un === 'sathish' && pwd === '123') {
-                check = true;
-                // window.location.href = 'live.html'
-            } else {
-                showSnackBar('Invalid credentials')
-                check = false;
+            const userCredential = {
+                "userName": $('#username').val(),
+                "password": $('#password').val()
             }
+            $.ajax({
+                url: 'http://criczz.us-east-2.elasticbeanstalk.com/criczz/login',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                method: 'POST',
+                data: userCredential,
+                success: function (data) {
+                    console.log('succes: ' + data);
+                    check = true;
+                },
+                error: function (xhr) {
+                    alert('Request Status: ' + xhr.status + ' Status Text: ' + xhr.statusText + ' ' + xhr.responseText);
+                    showSnackBar(xhr)
+                    check = false;
+                }
+            });
         }
 
         return check;

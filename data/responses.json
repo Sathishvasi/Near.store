@@ -1,6 +1,6 @@
 [{
         "leagueName": "International premier league",
-        "teamValues": [{
+        "teams": [{
                 "id": "1",
                 "teamA": "CSK",
                 "teamB": "RCB",
@@ -12,7 +12,11 @@
                 "wonBy": "RCB",
                 "imgA": "./assets/india.png",
                 "imgB": "./assets/wi.png",
-                "matchStatus": "RCB won by 101 runs"
+                "matchStatus": "RCB won by 101 runs",
+                "teamAWicket": 0,
+                "teamBWicket": 0,
+                "teamABallStatus": null,
+                "teamBBallStatus": null
             },
             {
                 "id": "2",
@@ -26,7 +30,11 @@
                 "wonBy": "RCB",
                 "imgA": "./assets/wi.png",
                 "imgB": "./assets/india.png",
-                "matchStatus": "RCB won by 101 runs"
+                "matchStatus": "RCB won by 101 runs",
+                "teamAWicket": 0,
+                "teamBWicket": 0,
+                "teamABallStatus": null,
+                "teamBBallStatus": null
             },
             {
                 "id": "3",
@@ -40,14 +48,18 @@
                 "wonBy": "RCB",
                 "imgA": "./assets/india.png",
                 "imgB": "./assets/australia.png",
-                "matchStatus": "RCB won by 101 runs"
+                "matchStatus": "RCB won by 101 runs",
+                "teamAWicket": 0,
+                "teamBWicket": 0,
+                "teamABallStatus": null,
+                "teamBBallStatus": null
             }
         ]
     },
 
     {
         "leagueName": "Premier league",
-        "teamValues": [{
+        "teams": [{
                 "id": "1",
                 "teamA": "CSK",
                 "teamB": "RCB",
@@ -59,7 +71,11 @@
                 "wonBy": "RCB",
                 "imgA": "./assets/india.png",
                 "imgB": "./assets/wi.png",
-                "matchStatus": "RCB won by 101 runs"
+                "matchStatus": "RCB won by 101 runs",
+                "teamAWicket": 0,
+                "teamBWicket": 0,
+                "teamABallStatus": null,
+                "teamBBallStatus": null
             },
             {
                 "id": "2",
@@ -73,13 +89,17 @@
                 "wonBy": "RCB",
                 "imgA": "./assets/india.png",
                 "imgB": "./assets/australia.png",
-                "matchStatus": "RCB won by 101 runs"
+                "matchStatus": "RCB won by 101 runs",
+                "teamAWicket": 0,
+                "teamBWicket": 0,
+                "teamABallStatus": null,
+                "teamBBallStatus": null
             }
         ]
     },
     {
         "leagueName": "Indian Premier league",
-        "teamValues": [{
+        "teams": [{
                 "id": "1",
                 "teamA": "CSK",
                 "teamB": "RCB",
@@ -91,7 +111,11 @@
                 "wonBy": "RCB",
                 "imgA": "./assets/india.png",
                 "imgB": "./assets/wi.png",
-                "matchStatus": "RCB won by 101 runs"
+                "matchStatus": "RCB won by 101 runs",
+                "teamAWicket": 0,
+                "teamBWicket": 0,
+                "teamABallStatus": null,
+                "teamBBallStatus": null
             },
             {
                 "id": "2",
@@ -105,13 +129,17 @@
                 "wonBy": "RCB",
                 "imgA": "./assets/india.png",
                 "imgB": "./assets/wi.png",
-                "matchStatus": "RCB won by 101 runs"
+                "matchStatus": "RCB won by 101 runs",
+                "teamAWicket": 0,
+                "teamBWicket": 0,
+                "teamABallStatus": null,
+                "teamBBallStatus": null
             }
         ]
     },
     {
         "leagueName": "Local premier league",
-        "teamValues": [{
+        "teams": [{
                 "id": "1",
                 "teamA": "CSK",
                 "teamB": "RCB",
@@ -123,7 +151,11 @@
                 "wonBy": "RCB",
                 "imgA": "./assets/india.png",
                 "imgB": "./assets/wi.png",
-                "matchStatus": "RCB won by 101 runs"
+                "matchStatus": "RCB won by 101 runs",
+                "teamAWicket": 0,
+                "teamBWicket": 0,
+                "teamABallStatus": null,
+                "teamBBallStatus": null
             },
             {
                 "id": "2",
@@ -137,7 +169,11 @@
                 "wonBy": "RCB",
                 "imgA": "./assets/wi.png",
                 "imgB": "./assets/india.png",
-                "matchStatus": "RCB won by 101 runs"
+                "matchStatus": "RCB won by 101 runs",
+                "teamAWicket": 0,
+                "teamBWicket": 0,
+                "teamABallStatus": null,
+                "teamBBallStatus": null
             },
             {
                 "id": "3",
@@ -151,7 +187,11 @@
                 "wonBy": "RCB",
                 "imgA": "./assets/india.png",
                 "imgB": "./assets/australia.png",
-                "matchStatus": "RCB won by 101 runs"
+                "matchStatus": "RCB won by 101 runs",
+                "teamAWicket": 0,
+                "teamBWicket": 0,
+                "teamABallStatus": null,
+                "teamBBallStatus": null
             }
         ]
     }

@@ -266,6 +266,9 @@ p {
           flex-basis: 40%;
         }
 
+        .last-wckt{
+        }
+
         &-values {
           flex-basis: 60%;
           justify-content: space-between;
@@ -362,15 +365,15 @@ p {
 
       .red,
       .green {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         border-radius: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
         margin-left: 10px;
-        font-size: 14px;
+        font-size: 16px;
       }
       .red {
         background-color: #d04a4a;

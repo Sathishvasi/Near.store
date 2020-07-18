@@ -6,7 +6,7 @@ $(document).ready(function () {
 
         data.forEach((leagueData, index) => {
             scoreCards = ''
-            leagueData.teamValues.forEach(val => {
+            leagueData.teams.forEach(val => {
                 var format = /-/;
                 rr = format.test(val.teamARun) ? (val.teamARun.split('-')[0] / val.teamAOver).toFixed(2) : (val.teamARun / val.teamAOver).toFixed(2);
 

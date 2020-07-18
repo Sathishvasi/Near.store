@@ -1,6 +1,6 @@
 [{
     "leagueName": "International premier league",
-    "teamValues": [{
+    "teams": [{
             "id": "1",
             "teamA": "CSK",
             "teamB": "RCB",
@@ -23,7 +23,7 @@
 
 {
     "leagueName": "Premier league",
-    "teamValues": [{
+    "teams": [{
             "id": "1",
             "teamA": "CSK",
             "teamB": "RCB",
@@ -45,7 +45,7 @@
 },
 {
     "leagueName": "Indian Premier league",
-    "teamValues": [{
+    "teams": [{
             "id": "1",
             "teamA": "CSK",
             "teamB": "RCB",

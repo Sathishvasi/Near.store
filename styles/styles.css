@@ -443,8 +443,8 @@ p {
 
 .details__fav .fav-status .red,
 .details__fav .fav-status .green {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -457,7 +457,7 @@ p {
           align-items: center;
   color: white;
   margin-left: 10px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .details__fav .fav-status .red {
