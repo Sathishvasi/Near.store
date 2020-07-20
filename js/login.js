@@ -37,17 +37,16 @@
                 data: userCredential,
                 success: function (data) {
                     console.log('succes: ' + data);
-                    check = true;
+                    window.location.href = 'live.html';
                 },
                 error: function (xhr) {
-                    alert('Request Status: ' + xhr.status + ' Status Text: ' + xhr.statusText + ' ' + xhr.responseText);
-                    showSnackBar(xhr)
-                    check = false;
+                    showSnackBar(xhr.statusText)
+                    return false;
                 }
             });
+        } else {
+            return check;
         }
-
-        return check;
     });
 
 
