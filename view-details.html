@@ -8,6 +8,7 @@
     <link href="./vendor/nunito.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/loader.css">
+    <link rel="stylesheet" href="./styles/global.css">
 
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -82,8 +83,8 @@
                     </div>
                 </div>
                 <div class="partnership__column summary">
-                    <span class="batsman"><b>Partnership:</b> 34(23)</span>
-                    <div class="last-wckt"><b>Last wkt:</b> Chris Gayle 40(20)</div>
+                    <span class="batsman"><b>Partnership:</b> <span class="partner"></span></span>
+                    <div class="last-wckt"><b>Last wkt:</b> <span class="last-wkt"></span></div>
                 </div>
             </div>
             <div class="partnership bowler">
@@ -144,9 +145,11 @@
         </div>
     </div>
     <div class="loader">Loading...</div>
+    <div id="snackbar"></div>
 </body>
 
 <script src="./vendor/jquery.min.js"></script>
+<script src="./js/global.js"></script>
 <script src="./js/view-details.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
