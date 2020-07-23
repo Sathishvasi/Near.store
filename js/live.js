@@ -65,7 +65,8 @@ $(document).ready(function () {
             $('.loader').hide();
         },
         error: function (err) {
-            showSnackBar(err.statusText);
+            let errMsg = err.responseJSON ? err.responseJSON.error : err.statusText;
+            showSnackBar(errMsg);
         }
     });
 });

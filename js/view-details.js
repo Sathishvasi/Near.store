@@ -141,8 +141,9 @@ $(document).ready(function () {
                 let hrefContent = $(".view-summary").attr('href');
                 $(".view-summary").attr('href', hrefContent + '?page=' + rootPage);
             },
-            error: function (xhr) {
-                showSnackBar(xhr.responseJSON.error);
+            error: function (err) {
+                let errMsg = err.responseJSON ? err.responseJSON.error : err.statusText;
+                showSnackBar(errMsg);
             }
         });
     }
