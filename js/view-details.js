@@ -1,7 +1,15 @@
 $(document).ready(function () {
     let str = window.location.href;
-    let ID = str.substr(str.lastIndexOf("=") + 1, str.lastIndexOf("/"));
-    console.log(ID);
+
+    let URL = window.location.search;
+    let param = new URLSearchParams(URL);
+
+    let ID = param.get('id');
+    let rootPage = param.get('page');
+
+    $('#' + rootPage).addClass('active');
+
+    console.log(ID, rootPage);
 
     // Enable loader
     $('.loader').show();
@@ -125,10 +133,16 @@ $(document).ready(function () {
 
                 // Disable loader
                 $('.loader').hide();
+
+                // Show content after page load
+                $('.details').show();
+
+                // Summary link update
+                let hrefContent = $(".view-summary").attr('href');
+                $(".view-summary").attr('href', hrefContent + '?page=' + rootPage);
             },
             error: function (xhr) {
-                $('.details').hide();
-                showSnackBar(xhr.statusText);
+                showSnackBar(xhr.responseJSON.error);
             }
         });
     }

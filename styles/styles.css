@@ -13,6 +13,7 @@ p {
 
 .logo-wrapper {
   text-align: center;
+  padding-top: 68px;
 }
 
 .logo-wrapper img {
@@ -22,7 +23,7 @@ p {
 
 .logo-wrapper h3 {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   color: #949494;
 }
 
@@ -180,6 +181,7 @@ p {
 }
 
 .details {
+  display: none;
   margin: 0 15px 15px 15px;
 }
 
@@ -555,8 +557,8 @@ p {
   width: 1em;
   height: 1em;
   text-align: center;
-  -webkit-transition: all .50s;
-  transition: all .50s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .tab-content {
@@ -564,8 +566,8 @@ p {
   padding: 0 1em;
   color: #2c3e50;
   background: white;
-  -webkit-transition: all .50s;
-  transition: all .50s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .tab-close {
@@ -597,5 +599,35 @@ input:checked + .tab-label::after {
 input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 16px 12px;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  -webkit-box-shadow: inset 0px 1px 20px 0px #0000006b;
+          box-shadow: inset 0px 1px 20px 0px #0000006b;
+}
+
+nav .nav-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #1d3c6f;
+}
+
+nav .nav-tab .tablinks {
+  border-left: 1px solid #16213380;
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 18px 0px;
+}
+
+nav .nav-tab .tablinks.active {
+  background-color: #171f32;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -5,7 +5,7 @@ $(document).ready(function () {
         type: "GET",
         url: API_HOST_URL + "matches",
         success: function (data) {
-            console.log(data);
+            // console.log(data);
             let rr = scoreCards = tabContent = checked = '';
 
             data.forEach((leagueData, index) => {
@@ -14,7 +14,7 @@ $(document).ready(function () {
                     var format = /-/;
 
                     validateNullObj(val);
-                    console.log(val);
+                    // console.log(val);
 
                     rr = format.test(val.teamARun) ? (val.teamARun.split('-')[0] / val.teamAOver).toFixed(2) : (val.teamARun / val.teamAOver).toFixed(2);
 
@@ -46,7 +46,7 @@ $(document).ready(function () {
                         <p class="status">${val.matchStatus}</p>
                         <!--<p class="run-rate">RR: ${rr}</p>-->
                     </div>
-                    <a href="./view-details.html?id=${val.id}" class="team-summary">
+                    <a href="./view-details.html?id=${val.id}&page=live" class="team-summary">
                         View Score card
                     </a>
                 </div>`

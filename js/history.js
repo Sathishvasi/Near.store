@@ -1,15 +1,15 @@
 $(document).ready(function () {
     $('.loader').show();
     $.getJSON("./data/responses.json", function (data) {
-        console.log(data);
+        // console.log(data);
         let rr = scoreCards = tabContent = checked = '';
 
-        data.forEach((leagueData,index) => {
+        data.forEach((leagueData, index) => {
             scoreCards = ''
             leagueData.teams.forEach(val => {
                 var format = /-/;
 
-                rr = format.test(val.teamARun) ? (val.teamARun.split('-')[0] / val.teamAOver).toFixed(2) : (val.teamARun/val.teamAOver).toFixed(2);
+                rr = format.test(val.teamARun) ? (val.teamARun.split('-')[0] / val.teamAOver).toFixed(2) : (val.teamARun / val.teamAOver).toFixed(2);
 
                 scoreCards += `<div class="score-card">
                 <div class="team-wrapper">
@@ -39,13 +39,13 @@ $(document).ready(function () {
                     <p class="status">${val.matchStatus}</p>
                     <p class="run-rate">RR: ${rr}</p>
                 </div>
-                <a href="./view-details.html?id=${val.id}" class="team-summary">
+                <a href="./view-details.html?id=${val.id}&page=history" class="team-summary">
                     View Score card
                 </a>
             </div>`
             });
             checked = index === 0 ? 'checked' : '';
-            tabContent+= `<div class="tab">
+            tabContent += `<div class="tab">
             <input type="radio" id="rd${index+1}" name="rd" ${checked}>
             <label class="tab-label" for="rd${index+1}">${leagueData.leagueName}</label>
             <div class="tab-content">
