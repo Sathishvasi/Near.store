@@ -65,7 +65,7 @@ $(document).ready(function () {
             $('.loader').hide();
         },
         error: function (err) {
-            showSnackBar(err.responseJSON.error);
+            showSnackBar(err.statusText);
         }
     });
 });
