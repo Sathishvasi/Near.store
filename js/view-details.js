@@ -101,7 +101,7 @@ $(document).ready(function () {
                 let sliderContent = '';
                 validateNullObj(data.balls);
 
-                data.balls.forEach(element => {
+                Array.isArray(data.balls) && data.balls.forEach(element => {
                     let colorUpdate;
                     switch (element.trim()) {
                         case '4':

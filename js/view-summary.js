@@ -5,5 +5,7 @@ $(document).ready(function () {
     let rootPage = param.get('page');
     $('#' + rootPage).addClass('active');
 
+    $('.details').show()
+
     console.log(rootPage);
 })

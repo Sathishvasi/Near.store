@@ -17,6 +17,7 @@ p {
   img {
     width: 120px;
     height: 120px;
+    object-fit: cover;
   }
   h3 {
     margin: 0;
@@ -63,8 +64,8 @@ p {
         img {
           width: 50px;
           height: 50px;
+          object-fit: cover;
           margin-right: 10px;
-          object-fit: contain;
         }
 
         &-details {
@@ -102,6 +103,7 @@ p {
         img {
           margin-right: 0px;
           margin-left: 10px;
+          object-fit: cover;
         }
 
         .team-details {
@@ -212,6 +214,7 @@ p {
             width: 50px;
             height: 50px;
             margin-right: 8px;
+            object-fit: cover;
           }
           span {
             font-weight: bold;
