@@ -178,8 +178,7 @@ p {
     padding-bottom: 15px;
 
     .status {
-      padding: 0 15px;
-      height: 50px;
+      padding: 12px 15px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -197,6 +196,7 @@ p {
       .show-stat {
         opacity: 1;
         transition: opacity 1s linear;
+        word-break: break-all;
       }
     }
     .teams {
@@ -216,12 +216,16 @@ p {
             margin-right: 8px;
             object-fit: cover;
           }
-          span {
-            font-weight: bold;
-            color: #656565;
-          }
+
           .team-name {
             margin-right: 5px;
+            span {
+              font-weight: bold;
+              color: #656565;
+            }
+            p{
+              font-size: 12px;
+            }
           }
         }
 
@@ -234,7 +238,7 @@ p {
 
       &-target {
         font-size: 14px;
-        padding-top: 10px;
+        padding-top: 15px;
         color: #6b6b6b;
 
         span:first-child {
@@ -328,6 +332,10 @@ p {
         }
         .mid {
           background-color: #4caf50;
+        }
+
+        .high, .low, .mid{
+          font-size: 12px;
         }
       }
     }

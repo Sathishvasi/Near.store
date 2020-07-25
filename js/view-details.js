@@ -31,6 +31,14 @@ $(document).ready(function () {
                 // Match Title
                 $('.logo-wrapper h3').text(matchSummary.leagueName);
 
+                // Team Name
+                $(rootEle).find('.teamAshortName').text(matchSummary.teamADet.shortName);
+                $(rootEle).find('.teamAfullName').text(matchSummary.teamADet.fullName);
+
+                $(rootEle).find('.teamBshortName').text(matchSummary.teamBDet.shortName);
+                $(rootEle).find('.teamBfullName').text(matchSummary.teamBDet.fullName);
+
+
                 // Team Image render
                 $(rootEle).find('#teamScore1 img').attr('src', matchSummary.imgA);
                 $(rootEle).find('#teamScore2 img').attr('src', matchSummary.imgB);
@@ -44,7 +52,11 @@ $(document).ready(function () {
                 $(rootEle).find('.status-content').addClass('show-stat');
 
                 // Required runs
-                $(rootEle).find('.reqRuns').text(matchSummary.matchStatus);
+                if (data.reqballStatus && data.reqballStatus != '-') {
+                    $(rootEle).find('.reqRuns').text(data.reqballStatus);
+                } else {
+                    $(rootEle).find('.reqRuns').hide();
+                }
 
                 // Run rate
                 $(rootEle).find('.rrr').text(data.rrr === '' ? '0.0' : data.rrr);
@@ -108,8 +120,9 @@ $(document).ready(function () {
                         case '6':
                             colorUpdate = 'high';
                             break;
-                        case 'W':
+                        case 'WK':
                         case 'NB':
+                        case 'WI':
                             colorUpdate = 'low';
                             break;
                         default:
