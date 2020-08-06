@@ -1,24 +1,25 @@
-$(document).ready(function () {
+$(document).ready(function() {
     $('.loader').show();
 
     $.ajax({
         type: "GET",
         url: API_HOST_URL + "matches",
-        success: function (data) {
-            // console.log(data);
-            let rr = scoreCards = tabContent = checked = '';
+        success: function(data) {
+            console.log(data);
+            if (data.length) {
+                let rr = scoreCards = tabContent = checked = '';
 
-            data.forEach((leagueData, index) => {
-                scoreCards = ''
-                leagueData.teams.forEach(val => {
-                    var format = /-/;
+                data.forEach((leagueData, index) => {
+                    scoreCards = ''
+                    leagueData.teams.forEach(val => {
+                        var format = /-/;
 
-                    validateNullObj(val);
-                    // console.log(val);
+                        validateNullObj(val);
+                        // console.log(val);
 
-                    rr = format.test(val.teamARun) ? (val.teamARun.split('-')[0] / val.teamAOver).toFixed(2) : (val.teamARun / val.teamAOver).toFixed(2);
+                        rr = format.test(val.teamARun) ? (val.teamARun.split('-')[0] / val.teamAOver).toFixed(2) : (val.teamARun / val.teamAOver).toFixed(2);
 
-                    scoreCards += `<div class="score-card">
+                        scoreCards += `<div class="score-card">
                     <div class="team-wrapper">
                         <div class="team">
                             <img src="${val.imgA}" alt="Team 1" />
@@ -50,21 +51,25 @@ $(document).ready(function () {
                         View Score card
                     </a>
                 </div>`
-                });
-                checked = index === 0 ? 'checked' : '';
-                tabContent += `<div class="tab">
+                    });
+                    checked = index === 0 ? 'checked' : '';
+                    tabContent += `<div class="tab">
                 <input type="radio" id="rd${index+1}" name="rd" ${checked}>
                 <label class="tab-label" for="rd${index+1}">${leagueData.leagueName}</label>
                 <div class="tab-content">
                     ${scoreCards}
                 </div>
                 </div>`
-            });
+                });
 
-            $('.score-wrapper .tabs').html(tabContent);
-            $('.loader').hide();
+                $('.score-wrapper .tabs').html(tabContent);
+                $('.loader').hide();
+            } else {
+                $('.score-wrapper .no-results').show();
+                $('.loader').hide();
+            }
         },
-        error: function (err) {
+        error: function(err) {
             let errMsg = err.responseJSON ? err.responseJSON.error : err.statusText;
             showSnackBar(errMsg);
         }

@@ -29,6 +29,22 @@ p {
   color: #949494;
 }
 
+.no-results {
+  display: none;
+  width: 100%;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.no-results img {
+  width: 140px;
+}
+
+.no-results p {
+  color: white;
+  font-size: 18px;
+}
+
 .score-wrapper {
   margin: 0 15px;
 }
@@ -341,6 +357,13 @@ p {
   display: flex;
 }
 
+.details__content .partnership__column-values * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0px;
+  text-align: center;
+}
+
 .details__content .partnership .header {
   font-weight: bold;
   color: #003390;
@@ -405,7 +428,9 @@ p {
   background-color: #4caf50;
 }
 
-.details__content .ball-details .slider .high, .details__content .ball-details .slider .low, .details__content .ball-details .slider .mid {
+.details__content .ball-details .slider .high,
+.details__content .ball-details .slider .low,
+.details__content .ball-details .slider .mid {
   font-size: 12px;
 }
 
@@ -505,6 +530,7 @@ p {
 .history .details__header .teams-score {
   padding: 0;
   width: 100%;
+  font-size: 14px;
 }
 
 .history .details__header .teams-score .score {
